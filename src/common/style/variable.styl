@@ -1,0 +1,28 @@
+$theme-color = #18D5D9
+
+$color-row-line = #F5F5F5
+
+$color-col-line = #F5F5F5
+
+.ellipse-one
+  white-space nowrap
+  overflow hidden
+  text-overflow ellipsis
+
+ellipse-l($num)
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $num;
+  -webkit-box-orient: vertical;
+
+.bottom-loading
+  width 100%
+  height 60px
+  display flex
+  justify-content center
+  align-items center
+  font-size 22px
+  color #333
+  .cube-loading
+    margin-right 10px
